@@ -3,3 +3,6 @@
 @tailwind utilities;
 
 @import "../tailwind/components.css";
+* {
+  box-sizing: border-box;
+}

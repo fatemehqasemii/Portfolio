@@ -1,7 +1,7 @@
 import "./globals.css";
 import Header from "./_components/header/header";
 import Footer from "./_components/footer/footer";
-import SideBar from "./_components/sideBar/sideBar";
+import SideBar from "./_components/sidebar/sidebar";
 
 export default function RootLayout({
   children,

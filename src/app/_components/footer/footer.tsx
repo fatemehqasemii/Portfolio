@@ -1,12 +1,12 @@
-import Git from "../../../../public/icons/git-merge.svg";
-import Check from "../../../../public/icons/check.svg";
-import Alert from "../../../../public/icons/alert-triangle.svg";
-import Bell from "../../../../public/icons/bell.svg";
-import Circle from "../../../../public/icons/x-circle.svg";
+import Git from "public/icons/git-merge.svg";
+import Check from "public/icons/check.svg";
+import Alert from "public/icons/alert-triangle.svg";
+import Bell from "public/icons/bell.svg";
+import Circle from "public/icons/x-circle.svg";
 
 const Footer: React.FC = () => {
   return (
-    <div className="flex items-center gap-4 border-t border-gray-900 shadow shadow-gray-900/50 px-5 justify-between bg-[#24292e]">
+    <div className="flex items-center gap-4 border-t border-gray-900 shadow shadow-gray-900/50 px-5 justify-between bg-[#24292e] h-5">
       <div className="flex gap-5 ">
         <span className="flex items-center gap-1 ">
           <Git className="stroke-white w-3 h-3" />

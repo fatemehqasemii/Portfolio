@@ -20,7 +20,7 @@ const Header: React.FC = () => {
           height={15}
           className="w-4 h-4  md:w-5 md:h-5"
         />
-        <ul className="text-sm text-gray-300 md:flex hidden gap-2">
+        <ul className="text-sm text-gray-300 md:flex hidden gap-4">
           {navList?.map((items, index) => (
             <li key={index} className="cursor-pointer">
               {items?.name}

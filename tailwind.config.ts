@@ -14,9 +14,6 @@ export default {
       },
     },
     extend: {
-      screens: {
-        "900px": "900px",
-      },
       colors: {
         "slate-900": "#0f172a",
       },
