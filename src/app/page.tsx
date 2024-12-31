@@ -1,11 +1,9 @@
-import Head from "next/head";
+import Explorer from "./_components/explorer/explorer";
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <link rel="icon" href="/icons/VS-Code.svg" />
-      </Head>
-    </>
+    <div className="flex">
+      <Explorer />
+    </div>
   );
 }

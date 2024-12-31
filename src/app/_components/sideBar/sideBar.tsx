@@ -1,4 +1,4 @@
-"use client"; // because use want use usePathname for change style of active page
+"use client";
 import Copy from "public/icons/copy.svg";
 import Email from "public/icons/mail.svg";
 import Settings from "public/icons/settings.svg";
@@ -17,7 +17,9 @@ const SideBar: React.FC = () => {
       <div className="flex flex-col items-center gap-6 justify-center pt-3">
         <Link
           href={""}
-          className={`${isActive && "border-l border-[#007BEC]"}`}
+          className={`${
+            isActive && "border-l border-[#007BEC]"
+          } hover:bg-slate-700`}
         >
           <Copy className="stroke-[#909090] w-6 h-6" />
         </Link>
