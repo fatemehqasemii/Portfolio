@@ -19,16 +19,16 @@ export const Accordion: React.FC<AccordionProps> = ({ data }) => {
             <button
               onClick={() => toggleAccordion(index)}
               type="button"
-              className={`${
-                index === activeIndex ? "text-white" : "text-base-content"
-              }`}
+              className={"text-gray-300 pt-3"}
             >
-              <span>{item.title}</span>
-              {activeIndex === index ? (
-                <IconChevronUp width={18} />
-              ) : (
-                <IconChevronDown width={18} />
-              )}
+              <span className="flex text-[14px]">
+                {activeIndex === index ? (
+                  <IconChevronUp width={18} className="stroke-gray-300" />
+                ) : (
+                  <IconChevronDown width={18} className="stroke-gray-300" />
+                )}
+                {item.title}
+              </span>
             </button>
           </h2>
           {activeIndex === index && (

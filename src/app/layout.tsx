@@ -12,8 +12,10 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-[#1f2428] min-h-screen flex flex-col">
         <Header />
-        <main className=" ">{children}</main>
-        <SideBar />
+        <div className="grid  grid-cols-[auto,1fr]">
+          <SideBar />
+          <main>{children}</main>
+        </div>
         <Footer />
       </body>
     </html>
