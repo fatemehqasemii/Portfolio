@@ -5,7 +5,7 @@ import IconChevronUp from "public/icons/chevron-up.svg";
 import IconChevronDown from "public/icons/chevron-down.svg";
 
 export const Accordion: React.FC<AccordionProps> = ({ data }) => {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
   const toggleAccordion = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -21,7 +21,7 @@ export const Accordion: React.FC<AccordionProps> = ({ data }) => {
               type="button"
               className={"text-gray-300 pt-3"}
             >
-              <span className="flex text-[14px]">
+              <span className="flex text-[14px] font-bold">
                 {activeIndex === index ? (
                   <IconChevronUp width={18} className="stroke-gray-300" />
                 ) : (
