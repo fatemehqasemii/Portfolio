@@ -1,25 +1,22 @@
 "use client";
 import React, { useState } from "react";
 import { TabsProps } from "./tabs.types";
+import Link from "next/link";
 
 export const Tabs: React.FC<TabsProps> = ({ tabs }) => {
   const [activeTab, setActiveTab] = useState<number>(0);
 
-  const handleTabClick = (index: number) => {
-    setActiveTab(index);
-  };
-
   return (
-    <div className="tabs">
+    <div className="tabs flex flex-col">
       <div className="tab-labels">
         {tabs.map((tab, index) => (
-          <a
+          <Link
             key={`tab-${index}`}
+            href={tab.route}
             className={`tab-label ${index === activeTab ? "tab-active" : ""}`}
-            onClick={() => handleTabClick(index)}
           >
             {tab.label}
-          </a>
+          </Link>
         ))}
       </div>
       {tabs.map((tab, index) => (

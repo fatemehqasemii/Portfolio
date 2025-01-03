@@ -3,7 +3,7 @@ import React from "public/icons/react.svg";
 import CSS from "public/icons/css.svg";
 import HTMLIcon from "public/icons/html.svg";
 import JS from "public/icons/js.svg";
-import GitHub from "public/icons/markdown.svg";
+import Markdown from "public/icons/markdown.svg";
 
 const ListAccordion: React.FC = () => {
   return (
@@ -25,7 +25,7 @@ const ListAccordion: React.FC = () => {
         projects.js
       </Link>
       <Link href={"/"} className="flex items-center gap-2 ">
-        <GitHub className="stroke-none w-[14px] h-[14px]" />
+        <Markdown className="stroke-none w-[14px] h-[14px]" />
         github.md
       </Link>
     </div>

@@ -1,9 +1,10 @@
 .tabs {
+  width: 100%;
   .tab-labels {
-    @apply relative gap-4 flex flex-col cursor-pointer select-none  items-center justify-center;
+    @apply relative gap-9 flex bg-[#1f2428] cursor-pointer select-none h-10 pl-5 items-center;
 
     & > .tab-label {
-      @apply text-current font-bold pb-2 transition-all duration-75 border-b border-transparent text-sm xl:text-xl;
+      @apply text-gray-300 text-[16px]  pb-2 transition-all duration-75 border-b border-transparent;
 
       &.tab-active {
         @apply border-b;
@@ -11,6 +12,6 @@
     }
   }
   .tab-content {
-    @apply leading-10 text-lg min-h-screen;
+    @apply leading-10 text-lg;
   }
 }

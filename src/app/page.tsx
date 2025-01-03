@@ -1,9 +1,3 @@
-import Explorer from "./_components/explorer/explorer";
-
 export default function Home() {
-  return (
-    <div className="flex">
-      <Explorer />
-    </div>
-  );
+  return <div className="bg-white border border-red-600"></div>;
 }

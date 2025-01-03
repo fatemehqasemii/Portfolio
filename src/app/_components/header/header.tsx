@@ -11,7 +11,7 @@ const Header: React.FC = () => {
     { name: "Help" },
   ];
   return (
-    <div className="px-4 flex justify-between border-b border-[#191d20] shadow shadow-gray-900/50 items-center h-10">
+    <div className="px-4 flex justify-between border-b border-[#191d20] shadow shadow-gray-900/50 bg-[#1f2428] items-center h-10">
       <div className="flex gap-6">
         <Image
           src="/icons/VS-Code.svg"
