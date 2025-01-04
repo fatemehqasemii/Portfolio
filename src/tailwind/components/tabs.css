@@ -1,17 +1,12 @@
 .tabs {
-  width: 100%;
   .tab-labels {
-    @apply relative gap-9 flex bg-[#1f2428] cursor-pointer select-none h-10 pl-5 items-center;
+    @apply relative   flex bg-[#1f2428] cursor-pointer select-none h-10  items-center;
 
     & > .tab-label {
-      @apply text-gray-300 text-[16px]  pb-2 transition-all duration-75 border-b border-transparent;
-
-      &.tab-active {
-        @apply border-b;
-      }
+      @apply text-gray-300 text-[10px] p-3 sm:text-[16px] border-r border-[#24292e] sm:pb-2 sm:pl-3 sm:pt-2 sm:pr-4 transition-all duration-75;
     }
   }
   .tab-content {
-    @apply leading-10 text-lg;
+    @apply p-4 bg-[#2d333b] text-gray-200  h-[calc(100vh-40px-20px)];
   }
 }

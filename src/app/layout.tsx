@@ -13,6 +13,8 @@ import About from "./about/page";
 import Contact from "./contact/page";
 import Project from "./projects/page";
 import GitHub from "./github/page";
+import Home from "./page";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -27,7 +29,7 @@ export default function RootLayout({
         </span>
       ),
       route: "/",
-      content: "",
+      content: <Home />,
     },
     {
       label: (
@@ -73,14 +75,13 @@ export default function RootLayout({
   ];
   return (
     <html lang="en">
-      <body className="bg-[#24292e] min-h-screen flex flex-col">
+      <body className="bg-[#24292e] relative flex flex-col">
         <Header />
         <div className=" flex flex-col">
           <div className="flex h-[calc(100vh-40px-20px)]">
             <SideBar />
             <Tabs tabs={tabs} />
           </div>
-          <main>{children}</main>
         </div>
         <Footer />
       </body>
