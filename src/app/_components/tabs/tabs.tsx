@@ -8,7 +8,7 @@ export const Tabs: React.FC<TabsProps> = ({ tabs }) => {
 
   return (
     <div className="tabs flex flex-col w-full">
-      <div className="tab-labels flex overflow-x-auto w-full bg-[#1f2428]">
+      <div className="tab-labels flex  w-full bg-[#1f2428]">
         {tabs.map((tab, index) => (
           <Link
             key={`tab-${index}`}

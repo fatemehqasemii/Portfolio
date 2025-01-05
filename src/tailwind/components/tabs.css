@@ -1,6 +1,6 @@
 .tabs {
   .tab-labels {
-    @apply relative   flex bg-[#1f2428] cursor-pointer select-none h-10  items-center;
+    @apply relative  flex bg-[#1f2428] cursor-pointer select-none h-10  items-center;
 
     & > .tab-label {
       @apply text-gray-300 text-[10px] p-3 sm:text-[16px] border-r border-[#24292e] sm:pb-2 sm:pl-3 sm:pt-2 sm:pr-4 transition-all duration-75;
