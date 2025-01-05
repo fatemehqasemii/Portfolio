@@ -14,6 +14,9 @@ export default {
       },
     },
     extend: {
+      gridTemplateColumns: {
+        "16": "repeat(auto-fit, minmax(240px, 1fr))",
+      },
       colors: {
         "slate-900": "#0f172a",
       },

@@ -6,7 +6,7 @@ import Circle from "public/icons/x-circle.svg";
 
 const Footer: React.FC = () => {
   return (
-    <div className="flex items-center gap-4 border-t border-gray-900 shadow shadow-gray-900/50 px-5 justify-between bg-[#24292e] h-5">
+    <div className="flex items-center gap-4 border-t border-gray-900 shadow shadow-gray-900/50 px-5 justify-between bg-[#24292e] h-5 fixed bottom-0 w-full">
       <div className="flex gap-5 ">
         <span className="flex items-center gap-1 ">
           <Git className="stroke-white w-3 h-3" />
