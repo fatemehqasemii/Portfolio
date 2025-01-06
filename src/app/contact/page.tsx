@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
       <div className="flex flex-col gap-5 text-xl ">
         <span className="flex items-center">
           <p className="text-[#808080] text-xl">1</p>
-          <p className="pl-3 text-[#f9826c] flex gap-2 text-[20px]">
+          <p className="pl-3 text-blue-600 flex gap-2 text-[20px]">
             <span className="font-bold">.</span>
             socials
             <span className="text-gray-300 font-bold">{`{`}</span>
@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
             email
             <span className="text-gray-300 text-xl font-bold pl-2">:</span>
           </p>
-          <p className=" text-[#f9826c]">
+          <p className=" text-blue-600">
             hello.fatemeh1@gmail.com
             <span className="text-gray-300 text-xl font-bold pl-2">;</span>
           </p>
@@ -34,7 +34,7 @@ const Contact: React.FC = () => {
           </p>
           <Link
             href={"https://github.com/fatemehqasemii"}
-            className=" text-[#f9826c]"
+            className=" text-blue-600"
           >
             fatemehqasemii
             <span className="text-gray-300 text-xl font-bold pl-2">;</span>
@@ -48,7 +48,7 @@ const Contact: React.FC = () => {
           </p>
           <Link
             href={"https://www.linkedin.com/in/fatemeh-qasemi-952636217/"}
-            className=" text-[#f9826c]"
+            className=" text-blue-600"
           >
             fatemeh-qasemi-952636217
             <span className="text-gray-300 text-xl font-bold pl-2">;</span>

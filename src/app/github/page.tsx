@@ -1,9 +1,5 @@
 import Activity from "public/icons/activity.svg";
-import Star from "public/icons/star.svg";
-import Branch from "public/icons/branch.svg";
-import Eye from "public/icons/eye.svg";
-import Git from "public/icons/git.svg";
-import Pin from "public/icons/pin.svg";
+import CardGitHub from "../_components/card-github/card";
 
 const GitHub: React.FC = () => {
   return (
@@ -18,94 +14,7 @@ const GitHub: React.FC = () => {
         </div>
       </div>
       <div className="grid grid-cols-16 gap-6">
-        <div className="bg-[#1f2428] p-4 flex gap-3 flex-col justify-between">
-          <h1 className="text-xl text-blue-600">angular-algorithmic-trading</h1>
-          <p>
-            Web app with TD Ameritrade integration, backtesting, and automated
-            live trading. Nodejs and Angular
-          </p>
-          <div className="flex justify-between">
-            <div className="flex items-center gap-2">
-              <Eye className="stroke-blue-600 stroke-1" />
-              <p>0</p>
-              <Branch className="stroke-blue-600 stroke-1" />
-              <p>1</p>
-              <Star className="stroke-blue-600 stroke-1" />
-
-              <p>0</p>
-            </div>
-            <div className="flex items-center gap-2">
-              <Git className="stroke-blue-600 stroke-1" />
-              <Pin className="stroke-blue-600 stroke-1" />
-            </div>
-          </div>
-        </div>
-        <div className="bg-[#1f2428] p-4 flex gap-3 flex-col justify-between">
-          <h1 className="text-xl text-blue-600">angular-algorithmic-trading</h1>
-          <p>
-            Web app with TD Ameritrade integration, backtesting, and automated
-            live trading. Nodejs and Angular
-          </p>
-          <div className="flex justify-between">
-            <div className="flex items-center gap-2">
-              <Eye className="stroke-blue-600 stroke-1" />
-              <p>0</p>
-              <Branch className="stroke-blue-600 stroke-1" />
-              <p>1</p>
-              <Star className="stroke-blue-600 stroke-1" />
-
-              <p>0</p>
-            </div>
-            <div className="flex items-center gap-2">
-              <Git className="stroke-blue-600 stroke-1" />
-              <Pin className="stroke-blue-600 stroke-1" />
-            </div>
-          </div>
-        </div>
-        <div className="bg-[#1f2428] p-4 flex gap-3 flex-col justify-between">
-          <h1 className="text-xl text-blue-600">angular-algorithmic-trading</h1>
-          <p>
-            Web app with TD Ameritrade integration, backtesting, and automated
-            live trading. Nodejs and Angular
-          </p>
-          <div className="flex justify-between">
-            <div className="flex items-center gap-2">
-              <Eye className="stroke-blue-600 stroke-1" />
-              <p>0</p>
-              <Branch className="stroke-blue-600 stroke-1" />
-              <p>1</p>
-              <Star className="stroke-blue-600 stroke-1" />
-
-              <p>0</p>
-            </div>
-            <div className="flex items-center gap-2">
-              <Git className="stroke-blue-600 stroke-1" />
-              <Pin className="stroke-blue-600 stroke-1" />
-            </div>
-          </div>
-        </div>
-        <div className="bg-[#1f2428] p-4 flex gap-3 flex-col justify-between">
-          <h1 className="text-xl text-blue-600">angular-algorithmic-trading</h1>
-          <p>
-            Web app with TD Ameritrade integration, backtesting, and automated
-            live trading. Nodejs and Angular
-          </p>
-          <div className="flex justify-between">
-            <div className="flex items-center gap-2">
-              <Eye className="stroke-blue-600 stroke-1" />
-              <p>0</p>
-              <Branch className="stroke-blue-600 stroke-1" />
-              <p>1</p>
-              <Star className="stroke-blue-600 stroke-1" />
-
-              <p>0</p>
-            </div>
-            <div className="flex items-center gap-2">
-              <Git className="stroke-blue-600 stroke-1" />
-              <Pin className="stroke-blue-600 stroke-1" />
-            </div>
-          </div>
-        </div>
+        <CardGitHub />
       </div>
       <div className="flex flex-col gap-2 ">
         <Activity className="stroke-none" />

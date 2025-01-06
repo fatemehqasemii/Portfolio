@@ -14,6 +14,9 @@ export default {
       },
     },
     extend: {
+      backgroundImage: {
+        "hero-pattern": "url('/images/shape.svg')",
+      },
       gridTemplateColumns: {
         "16": "repeat(auto-fit, minmax(240px, 1fr))",
       },
