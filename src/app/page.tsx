@@ -1,9 +1,6 @@
 "use client";
-
 import { useState, useEffect } from "react";
-import HeroSection from "public/images/shape.svg";
-import Image from "next/image";
-export default function TypingEffect() {
+export default function Home() {
   const [displayedText, setDisplayedText] = useState("");
   const sentence = "Front-end Developer";
 
@@ -35,9 +32,7 @@ export default function TypingEffect() {
           </button>
         </div>
       </div>
-      <div className="flex">
-        {/* <HeroSection className="stroke-current" /> */}
-      </div>
+      <div className="flex"></div>
     </div>
   );
 }

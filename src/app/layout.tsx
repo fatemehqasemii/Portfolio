@@ -1,8 +1,7 @@
 import "./globals.css";
 import Header from "./_components/header/header";
 import Footer from "./_components/footer/footer";
-import SideBar from "./_components/sideBar/sideBar";
-import { Tabs } from "./_components/tabs/tabs";
+import { Tabs } from "./tabs/pages";
 import { Tab } from "@/types/tab.type";
 import HTMLIcon from "public/icons/html.svg";
 import CSS from "public/icons/css.svg";
@@ -14,6 +13,7 @@ import Contact from "./contact/page";
 import Project from "./projects/page";
 import GitHub from "./github/page";
 import Home from "./page";
+import SideBar from "./_components/sidebar/sideBar";
 
 export default function RootLayout({
   children,

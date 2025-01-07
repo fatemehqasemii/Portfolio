@@ -1,3 +1,5 @@
+"use client";
+
 const About: React.FC = () => {
   return (
     <div className="flex flex-col gap-3 text-gray-300 text-justify text-wrap px-5">
