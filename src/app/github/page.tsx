@@ -3,7 +3,7 @@ import CardGitHub from "../_components/card-github/card";
 
 const GitHub: React.FC = () => {
   return (
-    <div className="p-5 flex flex-col gap-6 overflow-y-auto h-full ">
+    <div className="p-5 flex flex-col gap-6  h-full ">
       <div className="bg-[#1f2428]">
         <div className="flex text-xl font-bold text-gray-300 gap-5 items-center justify-center h-[100px]">
           <p>fatemehqasemii</p>

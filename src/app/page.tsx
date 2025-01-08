@@ -18,9 +18,9 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex pt-20 pl-5  gap-5 h-full text-gray-300 justify-between">
+    <div className="flex pt-20 pl-5 border border-red-800 gap-5 h-full text-gray-300 justify-between">
       <div className="flex-col flex">
-        <h1 className="text-5xl font-bold">Fatemeh Qasemi</h1>
+        <h1 className="md:text-5xl text-xl font-bold">Fatemeh Qasemi</h1>
         <h3 className="text-2xl gap-1 flex">
           {displayedText}
           <span className="animate-blink text-blue-700 text-3xl">|</span>

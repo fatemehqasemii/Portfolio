@@ -75,10 +75,10 @@ export default function RootLayout({
   ];
   return (
     <html lang="en">
-      <body className="bg-[#24292e] relative flex flex-col">
+      <body className="bg-[#24292e]  flex flex-col">
         <Header />
         <div className=" flex flex-col">
-          <div className="flex h-[calc(100vh-40px-20px)]">
+          <div className="flex h-[calc(100vh-40px-20px-8px)]">
             <SideBar />
             <Tabs tabs={tabs} />
           </div>

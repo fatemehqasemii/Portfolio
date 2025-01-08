@@ -21,8 +21,8 @@ export const Tabs: React.FC<TabsProps> = ({ tabs }) => {
   };
 
   return (
-    <div className="tabs flex flex-col w-full">
-      <div className="tab-labels flex w-full bg-[#1f2428]">
+    <div className="tabs flex flex-col  h-[calc(100vh-40px-20px)] w-full border border-yellow-400">
+      <div className="tab-labels flex bg-[#1f2428] border border-orange-600 overflow-y-auto z-0 ">
         {tabs.map((tab, index) => (
           <div
             key={`tab-${index}`}
@@ -35,7 +35,7 @@ export const Tabs: React.FC<TabsProps> = ({ tabs }) => {
           </div>
         ))}
       </div>
-      <div className="tab-content flex-grow p-4 bg-[#2d333b] text-gray-200">
+      <div className="tab-content h-full flex-grow p-4 bg-[#2d333b] text-gray-200">
         {typeof tabs[activeTab].content === "string" ? (
           <div
             dangerouslySetInnerHTML={{

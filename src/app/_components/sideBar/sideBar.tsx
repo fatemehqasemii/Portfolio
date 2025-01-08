@@ -61,7 +61,7 @@ const SideBar: React.FC = () => {
 
   return (
     <div className="flex h-[calc(100vh-40px-20px)]">
-      <div className="bg-[#24292e] flex flex-col justify-between w-[55px] pt-3">
+      <div className="bg-[#24292e] z-10 flex flex-col justify-between w-[55px] pt-3  border-r border-[#161a1d]">
         <div className="flex flex-col items-center gap-3 justify-center ">
           {tabs.slice(0, 4).map((tab, index) => (
             <button
@@ -89,7 +89,7 @@ const SideBar: React.FC = () => {
           ))}
         </div>
       </div>
-      <div className="sm:flex flex-col pt-2 bg-[#161a1d]  w-[200px] pl-2 items-start border-r border-[#161a1d]">
+      <div className="sm:flex flex-col pt-2 bg-[#161a1d] hidden w-[200px] pl-2 items-start border-r border-[#161a1d]">
         <h3 className="text-gray-300 text-sm ">Explorer</h3>
         <Accordion data={faqs} />
       </div>

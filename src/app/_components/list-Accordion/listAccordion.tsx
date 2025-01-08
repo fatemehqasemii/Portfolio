@@ -12,19 +12,19 @@ const ListAccordion: React.FC = () => {
         <React className="stroke-none w-4 h-4" />
         home.jsx
       </Link>
-      <Link href={"/"} className="flex items-center gap-2 ">
+      <Link href={"/about"} className="flex items-center gap-2 ">
         <HTMLIcon className=" w-4 h-4 stroke-none " />
         about.html
       </Link>
-      <Link href={"/"} className="flex items-center gap-2 ">
+      <Link href={"/contact"} className="flex items-center gap-2 ">
         <CSS className=" w-4 h-4 stroke-none" />
-        content.css
+        contact.css
       </Link>
-      <Link href={"/"} className="flex items-center gap-2 ">
+      <Link href={"/projects"} className="flex items-center gap-2 ">
         <JS className="stroke-none w-[14px] h-[14px]" />
         projects.js
       </Link>
-      <Link href={"/"} className="flex items-center gap-2 ">
+      <Link href={"/github"} className="flex items-center gap-2 ">
         <Markdown className="stroke-none w-[14px] h-[14px]" />
         github.md
       </Link>
