@@ -61,7 +61,8 @@ const SideBar: React.FC = () => {
 
   return (
     <div className="flex h-[calc(100vh-40px-20px)]">
-      <div className="bg-[#24292e] z-10 flex flex-col justify-between w-[55px] pt-3  border-r border-[#161a1d]">
+      {/* <div className="bg-[#24292e] z-10 flex flex-col justify-between w-[55px] pt-3  border-r border-[#161a1d] "> */}
+      <div className="bg-[#24292e] z-10 flex flex-col justify-between w-[55px] pt-3 border-r border-[#161a1d]  h-full">
         <div className="flex flex-col items-center gap-3 justify-center ">
           {tabs.slice(0, 4).map((tab, index) => (
             <button

@@ -21,15 +21,15 @@ export const Tabs: React.FC<TabsProps> = ({ tabs }) => {
   };
 
   return (
-    <div className="tabs flex flex-col  h-[calc(100vh-40px-20px)] w-full border border-yellow-400">
-      <div className="tab-labels flex bg-[#1f2428] border border-orange-600 overflow-y-auto z-0 ">
+    <div className="tabs flex flex-col h-[calc(100vh-40px-20px)] w-full  relative">
+      <div className="tab-labels flex bg-[#1f2428] md:overflow-hidden overflow-x-auto scrollbar-hide whitespace-nowrap z-0">
         {tabs.map((tab, index) => (
           <div
             key={`tab-${index}`}
             onClick={() => handleTabClick(index, tab.route)}
             className={`tab-label ${
               index === activeTab ? "bg-[#2d333b]" : ""
-            } text-gray-300 text-[10px] sm:text-[16px] p-2 sm:py-2 sm:px-4 border-r border-[#24292e] cursor-pointer`}
+            } text-gray-300 text-[10px] sm:text-[16px] p-1 sm:py-2 sm:px-4 border-r border-[#24292e] cursor-pointer whitespace-nowrap`}
           >
             {tab.label}
           </div>

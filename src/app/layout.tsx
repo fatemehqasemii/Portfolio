@@ -13,7 +13,7 @@ import Contact from "./contact/page";
 import Project from "./projects/page";
 import GitHub from "./github/page";
 import Home from "./page";
-import SideBar from "./_components/sidebar/sideBar";
+import SideBar from "./_components/sideBar/sideBar";
 
 export default function RootLayout({
   children,
@@ -24,7 +24,7 @@ export default function RootLayout({
     {
       label: (
         <span className="flex items-center gap-1">
-          <ReactIcon className=" w-4 h-4 stroke-none " />
+          <ReactIcon className=" w-4 h-4 stroke-none hidden md:flex" />
           home.jsx
         </span>
       ),
@@ -34,7 +34,7 @@ export default function RootLayout({
     {
       label: (
         <span className="flex items-center gap-1">
-          <HTMLIcon className=" w-4 h-4 stroke-none " />
+          <HTMLIcon className=" w-4 h-4 stroke-none hidden md:flex " />
           about.html
         </span>
       ),
@@ -44,7 +44,7 @@ export default function RootLayout({
     {
       label: (
         <span className="flex items-center gap-1">
-          <CSS className=" w-4 h-4 stroke-none" />
+          <CSS className=" w-4 h-4 stroke-none hidden md:flex" />
           contact.css
         </span>
       ),
@@ -54,7 +54,7 @@ export default function RootLayout({
     {
       label: (
         <span className="flex items-center gap-1">
-          <JS className="stroke-none w-[14px] h-[14px]" />
+          <JS className="stroke-none hidden md:flex w-[14px] h-[14px]" />
           project.js
         </span>
       ),
@@ -64,7 +64,7 @@ export default function RootLayout({
     {
       label: (
         <span className="flex items-center gap-1">
-          <Markdown className="stroke-none w-[14px] h-[14px]" />
+          <Markdown className="stroke-none hidden md:flex w-[14px] h-[14px]" />
           github.md
         </span>
       ),
