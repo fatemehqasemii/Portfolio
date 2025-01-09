@@ -61,7 +61,6 @@ const SideBar: React.FC = () => {
 
   return (
     <div className="flex h-[calc(100vh-40px-20px)]">
-      {/* <div className="bg-[#24292e] z-10 flex flex-col justify-between w-[55px] pt-3  border-r border-[#161a1d] "> */}
       <div className="bg-[#24292e] z-10 flex flex-col justify-between w-[55px] pt-3 border-r border-[#161a1d]  h-full">
         <div className="flex flex-col items-center gap-3 justify-center ">
           {tabs.slice(0, 4).map((tab, index) => (
@@ -70,7 +69,7 @@ const SideBar: React.FC = () => {
               onClick={() => handleNavigation(tab.route)}
               className={`${
                 pathname === tab.route && " border-l-2 border-[#007BEC]"
-              } flex justify-center items-center  hover:bg-[#1f2428]  w-full h-12 `}
+              } flex justify-center items-center  hover:bg-[#1f2428] w-full h-12 `}
             >
               {tab.icon}
             </button>
@@ -90,7 +89,7 @@ const SideBar: React.FC = () => {
           ))}
         </div>
       </div>
-      <div className="sm:flex flex-col pt-2 bg-[#161a1d] hidden w-[200px] pl-2 items-start border-r border-[#161a1d]">
+      <div className="md:flex flex-col pt-2 bg-[#161a1d] hidden w-[200px] pl-2 items-start border-r border-[#161a1d]">
         <h3 className="text-gray-300 text-sm ">Explorer</h3>
         <Accordion data={faqs} />
       </div>
