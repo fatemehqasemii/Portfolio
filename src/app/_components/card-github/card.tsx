@@ -25,7 +25,7 @@ const CardGitHub = () => {
     // {
     //   title: "angular-algorithmic-trading",
     //   paragraph:
-    //     " Web app with TD Ameritrade integration, backtesting, and automated live trading. Nodejs and Angular",
+    //     " We    app with TD Ameritrade integration, backtesting, and automated live trading. Nodejs and Angular",
     //   eyeDesc: "0",
     //   branchDesc: "1",
     //   starDesc: "0",
@@ -40,7 +40,7 @@ const CardGitHub = () => {
     // },
   ];
   return listItem?.map((item) => (
-    <div className="bg-[#1f2428] rounded p-4 flex gap-2  flex-col justify-between">
+    <div className="bg-[#1f2428] rounded p-2 sm:p-4 flex gap-2  flex-col justify-between">
       <h1 className="text-[14px] sm:text-[16px] text-blue-600">
         {item?.title}
       </h1>
