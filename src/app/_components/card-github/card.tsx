@@ -40,9 +40,9 @@ const CardGitHub = () => {
     },
   ];
   return listItem?.map((item) => (
-    <div className="bg-[#1f2428] rounded p-4 flex gap-3 flex-col justify-between">
-      <h1 className="text-xl text-blue-600">{item?.title}</h1>
-      <p>{item.paragraph}</p>
+    <div className="bg-[#1f2428] rounded p-4 flex  flex-col justify-between">
+      <h1 className="text-[16px] sm:text-xl text-blue-600">{item?.title}</h1>
+      <p className="text-[12px] sm:text-xl">{item.paragraph}</p>
       <div className="flex justify-between">
         <div className="flex items-center gap-2">
           <Eye className="stroke-blue-600 stroke-1" />

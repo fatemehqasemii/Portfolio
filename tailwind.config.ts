@@ -18,7 +18,7 @@ export default {
         "hero-pattern": "url('/images/shape.svg')",
       },
       gridTemplateColumns: {
-        "16": "repeat(auto-fit, minmax(240px, 1fr))",
+        "16": "repeat(auto-fit, minmax(220px, 1fr))",
       },
       colors: {
         "slate-900": "#0f172a",
